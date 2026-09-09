@@ -90,6 +90,14 @@ main {
     align-items: center;
     color: #777;
     font-size: 20px;
+    overflow: hidden; /* Prevents raw photo shapes from leaking out */
+}
+
+/* Keeps your profile picture perfectly sized inside the box frames */
+.photo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crops image neatly into the square frame without stretching */
 }
 
 /* Projects page */
@@ -300,4 +308,3 @@ footer p {
         font-size: 14px;
     }
 }
-0
